@@ -18,19 +18,18 @@ class FileExplorer extends Component {
     super(props);
     this.data = [
       {
-        name:'Adarsh'
+        name:'File 1'
       },
       {
-        name:'Anil'
-      },
-      {
-        name:'Abid'
-      },
-      {
-        name:'Sidhant'
+        name: 'File 2'
       }
     ];
   }
+
+  openEditor = () => {
+
+  }
+
   render() {
     return (
         <div>
@@ -43,7 +42,7 @@ class FileExplorer extends Component {
             <Grid.Row>
               <Grid.Column>
                 <Segment>
-                  <FileDisplayComponent files={this.data}/>
+                  <FileDisplayComponent onClick={this.openEditor} files={this.data}/>
                 </Segment>
               </Grid.Column>
             </Grid.Row>
