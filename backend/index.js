@@ -19,6 +19,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use("/user", userRoutes);
 app.use("/files", fileRoutes);
 // listning express server
-app.listen(5556,() => (
-	console.log("listening on port 5556")
+app.listen(5558,() => (
+	console.log("listening on port 5558")
 ));

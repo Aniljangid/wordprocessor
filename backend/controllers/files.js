@@ -4,9 +4,9 @@ const path = require('path');
 const ab2str = require('arraybuffer-to-string');
 
 AWS.config.update({
-    accessKeyId: "AKIAIINDIZDYUUTE7QSA",
-    secretAccessKey: "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",
-    Bucket: "wordprocessor"
+    accessKeyId: process.env.ACCKEYID,
+    secretAccessKey: process.env.ACCKEYSEC,
+    Bucket: process.env.BUCKET,
   });
 
 let s3 = new AWS.S3();

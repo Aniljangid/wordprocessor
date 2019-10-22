@@ -6,7 +6,7 @@ class FileUnitComponent extends Component {
     return (
       <div>
         <span>
-          <Icon name='file' color='blue' size='big'/>
+          <Icon name='file' color='red' size='big'/>
             {this.props.name}
         </span>
         <Divider></Divider>

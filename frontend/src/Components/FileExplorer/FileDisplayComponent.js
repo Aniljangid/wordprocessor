@@ -6,11 +6,9 @@ class FileDisplayComponent extends Component {
   render() {
     return (
       <div>
-        <FileUnitComponent name="hello"/>
-        <FileUnitComponent name="hello"/>
-        <FileUnitComponent name="hello"/>
-        <FileUnitComponent name="hello"/>
-        <FileUnitComponent name="hello"/>
+        {this.props.files.map((each,i) => {
+        	return <FileUnitComponent name={each.name}/>
+        })}
       </div>
     )
   }
