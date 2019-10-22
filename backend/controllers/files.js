@@ -2,12 +2,15 @@ const db = require("../util/db");
 const AWS = require('aws-sdk');
 const path = require('path');
 const ab2str = require('arraybuffer-to-string');
+const dotenv = require('dotenv');
+dotenv.config();
 
 AWS.config.update({
     accessKeyId: process.env.ACCKEYID,
     secretAccessKey: process.env.ACCKEYSEC,
     Bucket: process.env.BUCKET,
   });
+
 
 let s3 = new AWS.S3();
 
