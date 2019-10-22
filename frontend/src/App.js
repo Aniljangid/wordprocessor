@@ -3,7 +3,7 @@ import './App.css';
 import { Router } from '@reach/router';
 import FileExplorer from './Components/FileExplorer/';
 import Reg from './register'
-import LoginForm from './login'
+import LoginForm from './Login'
 
 function App() {
   return (
