@@ -11,7 +11,7 @@ AWS.config.update({
 let s3 = new AWS.S3();
 
 const create = async (req, res) => {
-
+	console.log(req.body)
 	const {name, email, password} = req.body;
 
 	let hashedPassword = await hash.generatePasswordHash(password);
